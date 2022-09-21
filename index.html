@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Simple Map</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js?libraries=geometry&sensor=false"></script>
+
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <div id="map" style="border-style: solid; margin: 2em auto; ">
+        <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6A0NNK4gjmy7uqfWbLS636mmbVyzEycs&callback=initMap&libraries=&v=weekly" async></script>
+    </div>
+
+
+
+    <div class="location_choice" style="height: 20px;width: 33em;margin: auto;">
+        <input id="latitude" type="text" placeholder="Latitude">
+        <input id="longtitude" type="text" placeholder="Longtitude">
+        <button class="button" id="submit">Submit</button>
+        <p id="warning" style="display: none; color: red;">Please enter a value</p>
+    </div>
+
+    <div class="button_choice" style="    height: 30%;
+    width: 40%;
+    margin: auto;
+    padding: 50px;">
+
+
+
+        <button class="button" id="button1" title="Marker from 200km ">Button 1</button>
+        <button class="button" id="button2" title="Marker inbetween 100km to 200km ">Button 2</button>
+        <button class="button" id="button3" title="Highlight Country: Madagascar ">Button 3</button>
+        <button class="button" id="button4" title="Drop maker around a circle ">Button 4</button>
+        <button class="button" id="button5" title="Different colour preimiter ">Button 5</button>
+        <button class="button" id="button6" title="Different colour preimiter ">Button 6</button>
+        <p id="info"> </p>
+
+    </div>
+
+    <script src="./js/map.js "></script>
+
+
+    <script>
+    </script>
+
+
+
+
+
+</body>
+
+</html>
